@@ -73,6 +73,7 @@ body {
     color: grey;
     font-size: 12px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .header_container .header_user_info {
@@ -93,6 +94,8 @@ body {
     font-weight: bold;
     margin: 10px;
     display: flex;
+    align-items: center;
+    text-transform: uppercase;
 }
 
 .header_user_info p a {
