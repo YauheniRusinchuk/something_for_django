@@ -18,7 +18,7 @@ body {
     background-color: white;
     text-align: center;
     padding: 50px;
-    border-radius: 2px;
+    border-radius: 3px;
     box-shadow: 0 0 5px #e6e6e6;
 }
 
@@ -36,6 +36,7 @@ body {
     border: none;
     border-bottom: 1px solid #e6e6e6;
     outline: none;
+    font-size: 10px;
 }
 
 .login_container form button {
@@ -49,4 +50,5 @@ body {
     padding: 5px;
     color: white;
     cursor: pointer;
+    outline: none;
 }
