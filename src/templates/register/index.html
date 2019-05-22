@@ -1,9 +1,10 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
 
     <div class="register_container">
         <h3>REGISTER</h3>
+        <img src="{% static 'assets/add-user.png' %}" alt="">
         <form class="">
             <input type="text" placeholder="Username ..." name="" value="">
             <input type="email" placeholder="Email ..." name="" value="">
