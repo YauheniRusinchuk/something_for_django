@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'src.models.account',
     'src.models.profile',
+    'src.models.twit',
 ]
 
 AUTH_USER_MODEL = 'account.User'
