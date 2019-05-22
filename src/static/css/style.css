@@ -119,8 +119,9 @@ body {
     align-items: center;
 }
 
-.header_user_info a img {
+.header_user_info a .avatar {
     border-radius: 50%;
+    margin-right: 10px;
 }
 
 .container_posts {
@@ -217,5 +218,16 @@ body {
     text-decoration: none;
     margin: 10px;
     color: grey;
+    font-weight: bold;
+}
+
+.info_author {
+    margin-top: 10px;
+}
+
+.info_author a {
+    text-decoration: none;
+    color: #328538;
+    font-size: 10px;
     font-weight: bold;
 }

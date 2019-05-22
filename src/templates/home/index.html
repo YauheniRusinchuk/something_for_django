@@ -7,6 +7,9 @@
             {% for twit in twits %}
                 <div class="item">
                     <p>{{twit.text}}</p>
+                    <div class="info_author">
+                        <a href="">{{twit.profile.login}}</a>
+                    </div>
                 </div>
             {% endfor %}
         </div>
