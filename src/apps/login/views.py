@@ -5,6 +5,8 @@ from django.contrib.auth import authenticate, login, logout
 class Login(View):
 
     def get(self, request, *args, **kwargs):
+        if request.user.is_authenticated:
+            return redirect('home:home_page')
         return render(request, 'login/login.html', {})
 
     def post(self, request, *args, **kwargs):
