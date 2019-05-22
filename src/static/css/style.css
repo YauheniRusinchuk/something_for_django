@@ -36,7 +36,7 @@ body {
     border: none;
     border-bottom: 1px solid #e6e6e6;
     outline: none;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .login_container form button {
@@ -169,4 +169,46 @@ body {
     color: #e6e6e6;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.register_container {
+    width: 20%;
+    margin: 100px auto;
+    background-color: white;
+    padding: 50px;
+    text-align: center;
+    box-shadow: 0 0 5px #e6e6e6;
+    border-radius: 3px;
+}
+
+.register_container form input {
+    width: 100%;
+    margin: 10px;
+    padding: 5px;
+    background-color: white;
+    border: none;
+    border-bottom: 1px solid #e6e6e6;
+    outline: none;
+    font-size: 12px;
+}
+
+.register_container form button {
+    width: 100%;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 20px;
+    border: 2px solid #328538;
+    background-color: white;
+    padding: 3px;
+    color: #328538;
+    cursor: pointer;
+    outline: none;
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
+}
+
+.register_container form button:hover {
+    background-color: #328538;
+    color: white;
 }
