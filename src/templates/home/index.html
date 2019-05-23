@@ -13,7 +13,22 @@
                     </div>
                 </div>
             {% endfor %}
+            </div>
+    </div>
+
+
+    <div class="other_container">
+        <p class='label'>Your posts</p>
+        <div class="other_wrapper">
+            {% if user.profile.twit_set.all %}
+                {% for twit in user.profile.twit_set.all %}
+                    <div class="item">
+                        <p>{{twit.text}}</p>
+                    </div>
+                {% endfor %}
+            {% endif %}
         </div>
     </div>
+
 
 {% endblock %}
