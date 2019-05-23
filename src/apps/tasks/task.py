@@ -3,5 +3,10 @@ from django.conf import settings
 from config.celery import app
 
 @app.task
-def get_email(msg):
-    send_mail('test', msg, settings.EMAIL_HOST_USER, ['ruevgal@gmail.com'], fail_silently=False)
+def get_email(email):
+    send_mail('Hi, You are registered in our service, thanks ',
+              'Thank you for being with us)',
+              settings.EMAIL_HOST_USER,
+              [email],
+              fail_silently=False
+    )

@@ -83,6 +83,6 @@ from django.db.models import signals
 
 def user_post_save(sender, instance, signal, *args, **kwargs):
     if instance:
-        get_email.delay('SUKI')
+        get_email.delay(instance.email)
 
 signals.post_save.connect(user_post_save, sender=User)

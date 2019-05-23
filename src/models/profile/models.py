@@ -9,6 +9,7 @@ class Profile(models.Model):
     user        = models.OneToOneField(User, on_delete=models.CASCADE)
     login       = models.CharField(max_length=255, blank=False)
     followers   = models.ManyToManyField("Profile", related_name='flwrs')
+    avatar      = models.ImageField(upload_to='avatar/', blank=True)
 
 
     def __str__(self):

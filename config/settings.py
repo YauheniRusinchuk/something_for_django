@@ -122,8 +122,8 @@ USE_TZ = True
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = ''
-EMAIL_HOST_PASSWORD = ''
+EMAIL_HOST_USER = 'yourmail'
+EMAIL_HOST_PASSWORD = 'password'
 EMAIL_PORT = 587
 
 REDIS_HOST = 'localhost'
@@ -142,3 +142,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "src", "static"),
 ]
+
+MEDIA_ROOT = os.path.join(BASE_DIR, "src", "media")
+
+MEDIA_URL = '/media/'
