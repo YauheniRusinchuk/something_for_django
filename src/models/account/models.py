@@ -76,3 +76,13 @@ class User(AbstractBaseUser):
     @property
     def is_active(self):
         return self.active
+
+
+from django.db.models import signals
+
+
+def user_post_save(sender, instance, signal, *args, **kwargs):
+    if instance:
+        print("INSTANCE")
+
+signals.post_save.connect(user_post_save, sender=User)

@@ -13,8 +13,3 @@ class Profile(models.Model):
 
     def __str__(self):
         return f"{self.login}"
-
-
-    def twits_my_followers(self):
-        return self.followers.all()
-        #twits_followers = Twit.objects.filter(profile__in=followrs_this_profile)
