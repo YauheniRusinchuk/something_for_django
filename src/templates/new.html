@@ -1,6 +1,6 @@
 <div class="new_container">
-    <form class="">
-        <textarea name="name" placeholder="Text ..."></textarea>
+    <form class="" method="POST">{% csrf_token %}
+        <textarea name="text" placeholder="Text ..."></textarea>
         <button type="submit" name="button">NEW</button>
     </form>
 
