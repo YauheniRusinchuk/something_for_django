@@ -122,13 +122,8 @@ USE_TZ = True
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
-<<<<<<< HEAD
 EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''
-=======
-EMAIL_HOST_USER = 'you mail'
-EMAIL_HOST_PASSWORD = 'you password'
->>>>>>> 24038708848fbf4b455e6d741f0b9ab4d4339bdc
 EMAIL_PORT = 587
 
 REDIS_HOST = 'localhost'
