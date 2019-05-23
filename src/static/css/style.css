@@ -231,3 +231,53 @@ body {
     font-size: 10px;
     font-weight: bold;
 }
+
+.btn_new {
+    cursor: pointer;
+}
+
+.new_container {
+    position: absolute;
+    top: 50px;
+    left: 25%;
+    width: 50%;
+    border-radius: 3px;
+    background-color: white;
+    display: none;
+    z-index: 10;
+    box-shadow: 0 0 20px #e6e6e6;
+    text-align: center;
+    padding: 30px;
+}
+
+
+.new_container form textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border: 2px solid grey;
+    border-radius: 3px;
+    resize: none;
+    outline: none;
+}
+
+.new_container form button {
+    width: 50%;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+    border: 2px solid #328538;
+    background-color: white;
+    padding: 3px;
+    color: #328538;
+    cursor: pointer;
+    outline: none;
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
+}
+
+.new_container form button:hover {
+    background-color: #328538;
+    color: white;
+}
