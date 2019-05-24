@@ -29,6 +29,14 @@
                 {% for twit in user.profile.twit_set.all %}
                     <div class="item">
                         <p>{{twit.text}}</p>
+                        <div class="info_author">
+                            {% if twit.profile.avatar %}
+                                <img src="{{twit.profile.avatar.url}}" width="20" height="20" alt="">
+                            {% else %}
+                                <img src="https://fora.kz/images/no-photo.jpg" width="20" height="20" alt="">
+                            {% endif %}
+                            <a href="">{{twit.profile.login}}</a>
+                        </div>
                     </div>
                 {% endfor %}
             {% endif %}

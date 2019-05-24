@@ -155,7 +155,7 @@ body {
 }
 
 .container_wrapper .item {
-    font-size: 14px;
+    font-size: 12px;
     color: grey;
     font-weight: bold;
     border-radius: 3px;
@@ -331,7 +331,7 @@ body {
 }
 
 .other_wrapper .item {
-    font-size: 14px;
+    font-size: 12px;
     color: grey;
     font-weight: bold;
     border-radius: 3px;
@@ -339,4 +339,16 @@ body {
     background-color: white;
     border-bottom: 1px solid #e6e6e6;
 
+}
+
+.other_wrapper .info_author {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.other_wrapper .info_author img {
+    margin-right: 10px;
+    border-radius: 50%;
 }
