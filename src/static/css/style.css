@@ -223,6 +223,14 @@ body {
 
 .info_author {
     margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.info_author img {
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
 .info_author a {
