@@ -19,6 +19,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
+    path('profile/', include('src.apps.profile.urls', namespace='profile')),
     path('register/', include('src.apps.register.urls', namespace='register')),
     path('exit/', include('src.apps.logout.urls', namespace='exit')),
     path('login/', include('src.apps.login.urls', namespace='login')),

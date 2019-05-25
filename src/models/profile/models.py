@@ -1,4 +1,5 @@
 from django.db import models
+from django.shortcuts import reverse
 from django.utils.text import slugify
 from django.db.models.signals import pre_save
 from django.contrib.auth import get_user_model
@@ -13,6 +14,9 @@ class Profile(models.Model):
     login       = models.CharField(max_length=255, blank=False)
     followers   = models.ManyToManyField("Profile", related_name='flwrs')
     avatar      = models.ImageField(upload_to='avatar/', blank=True)
+
+    def get_absolue_url(self):
+        return reverse('profile:profile_page', kwargs={'slug': self.slug})
 
 
     def __str__(self):

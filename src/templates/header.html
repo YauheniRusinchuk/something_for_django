@@ -9,11 +9,11 @@
         <p>posts <a href="">{{user.profile.twit_set.all.count}}</a></p>
         <p>subscriptions <a href="">{{user.profile.followers.all.count}}</a></p>
         {% if user.profile.avatar %}
-        <a href="">
+        <a href="{{user.profile.get_absolue_url}}">
             <img class='avatar' src="{{user.profile.avatar.url}}" width="30" height="30" />
         </a>
         {% else %}
-            <a href=''>
+            <a href="{{user.profile.get_absolue_url}}">
                 <img class="avatar" src="https://fora.kz/images/no-photo.jpg" width="30" height="30" alt="">
             </a>
         {% endif %}
