@@ -14,7 +14,7 @@
                         {% else %}
                             <img src="https://fora.kz/images/no-photo.jpg" width="20" height="20" alt="">
                         {% endif %}
-                        <a href="">{{twit.profile.login}}</a>
+                        <a href="{{twit.profile.get_absolue_url}}">{{twit.profile.login}}</a>
                     </div>
                 </div>
             {% endfor %}
@@ -35,7 +35,7 @@
                             {% else %}
                                 <img src="https://fora.kz/images/no-photo.jpg" width="20" height="20" alt="">
                             {% endif %}
-                            <a href="">{{twit.profile.login}}</a>
+                            <a href="{{twit.profile.get_absolue_url}}">{{twit.profile.login}}</a>
                         </div>
                     </div>
                 {% endfor %}
