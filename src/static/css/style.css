@@ -352,3 +352,9 @@ body {
     margin-right: 10px;
     border-radius: 50%;
 }
+
+.profile_container {
+    width: 90%;
+    margin: 0 auto;
+    border: 2px solid red;
+}
